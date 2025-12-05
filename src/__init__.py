@@ -11,9 +11,11 @@ def create_app():
     from src.common.routes import bp as common_bp
     from src.user import bp as user_bp
     from src.calendar import bp as calendar_bp
+    from src.finance import bp as finance_bp
 
     app.register_blueprint(common_bp)
     app.register_blueprint(user_bp)
     app.register_blueprint(calendar_bp)
+    app.register_blueprint(finance_bp)
 
     return app
